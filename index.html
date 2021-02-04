@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Irina Egorova</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="portfolio%20style.css">
+    <script src="https://kit.fontawesome.com/f7fcaad981.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script src="navicon.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <header>
+            <nav class="right_header">
+                    <ul class="menu_top">
+                        <li><a href="#about">About me</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
+                    <button class="hamburger" id="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </button>
+            </nav>
+    </header>
+
+   <section id="main_banner"  style="background-image: url('https://blush.design/api/download?shareUri=R9LTOlbLp&s=0~eac7a8&w=800&h=800&fm=png');   background-size: contain;">
+           <div class="inner_banner">
+               <h1>Irina Egorova, student </h1>
+               <h1>of St. Petersburg State University</h1>
+           </div>
+   </section>
+
+    <section id="about" style="background-image: url('https://blush.design/api/download?shareUri=GLDgU_HiM&s=0.4%7Eeac7a8&w=800&h=800&fm=png'); background-size: contain;">
+
+            <h2>About me</h2>
+            <p>Hi, I'm Irina! I've been studying at SPbU for six months. </p>
+            <p>I love math and programming and dream of becoming a data analyst.</p>
+            <p>Also I love learning languages, traveling and trying myself in new areas.</p>
+            <p class="pull_down"><b class="pull_down">Skills: </b>C++, Python, Scikit-learn, NumPy</p>
+
+
+    </section>
+
+    <section id="portfolio" style="background-image: url('https://blush.design/api/download?shareUri=kdywl4GBW&s=0%7Eeac7a8-0.1%7Ed4a181&w=800&h=800&fm=png'); background-size: contain">
+        <h2>Portfolio</h2>
+        <p>Winner of the Gazprom Olympiad in Mathematics 2020</p>
+        <p>Finalist of the Sberbank hackathon on artificial intelligence</p>
+        <p class="popup">Finalist of the NTI Olympiad on Big data and Machine Learning 2019</p>
+        <p>The winner of the KFU Olympiad in Russian language 2019</p>
+        <p class="pull_down">Want to see my nudes? Click on the button!</p>
+
+        <script defer src="popups.js"></script>
+
+        <button data-modal-target="#modal" class="open-window"><p>See!</p></button>
+        <div class="modal" id="modal" class="window">
+            <div class="modal-header">
+                <div class="title">I'm so sorry...</div>
+                <button data-close-button class="close-button" class="window">&times;</button>
+            </div>
+            <div class="modal-body" class="window">
+                The last nude photo was eaten by my dog!
+            </div>
+        </div>
+        <div id="overlay" class="window"></div>
+    </section>
+
+    <section id="contacts" style="background-image: url('https://blush.design/api/download?shareUri=cAWck9AKo&s=0.1%7E915b3c-0.2%7Eeac7a8-0.3%7Ed4a181&w=800&h=800&fm=png'); background-size: contain">
+        <h2>Contacts</h2>
+        <p>You can contact me at eir.irina@mail.ru</p>
+    </section>
+
+    <footer>
+        <p>Irina Egorova, 2021</p>
+    </footer>
+</body>
+</html>

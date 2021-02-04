@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    margin: 50px auto;
+    max-width: 85%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(28, 33, 164, .4);
+}
+
+header .right_header {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+}
+
+header .menu_top {
+    list-style-type: none;
+}
+
+header .menu_top li {
+    display: inline-block;
+    margin-right: 75px;
+}
+
+header .menu_top a {
+    display: block;
+    text-decoration: none;
+    color: #2b3377;
+    font-size: 18px;
+    font-weight: 600;
+    -o-transition: color .4s ease;
+    -webkit-transition: color .4s ease;
+    transition: color .4s ease;
+}
+
+header .menu_top a:hover {
+    color: #121145;
+}
+
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    color: #2b3377;
+    display: none;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 767px) {
+    .right_header {
+        display: none;
+        width: 100%;
+    }
+
+    .right_header.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .right_header li a {
+        padding: 10px;
+    }
+    header {
+        padding-bottom: 0;
+    }
+}
+
+#main_banner {
+    padding: 60px 0 280px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    margin-right: 55px;
+}
+
+#main_banner .inner_banner >h1 {
+    color: #2b3377;
+    font-size: 50px;
+    font-weight: 600;
+    max-width: 838px;
+    margin-left: 85px;
+}
+
+#about {
+    padding: 180px 0 280px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    margin-left: 85px;
+}
+
+#about >h2 {
+    color: #2b3377;
+    text-align: right;
+    margin-right: 75px;
+    padding-bottom: 10px;
+}
+
+#about >p {
+    color: #2b3399;
+    text-align: right;
+    margin-right: 75px;
+}
+
+#portfolio {
+    padding: 180px 0 280px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    margin-right: 55px;
+}
+
+#portfolio >h2 {
+    color: #2b3377;
+    text-align: left;
+    margin-left: 85px;
+    padding-bottom: 10px;
+}
+
+#portfolio >p {
+    color: #2b3399;
+    text-align: left;
+    margin-left: 85px;
+}
+
+.pull_down {
+    padding-top: 30px;
+}
+
+#contacts {
+    padding: 180px 0 280px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    margin-left: 85px;
+}
+
+#contacts >h2 {
+    color: #2b3377;
+    text-align: right;
+    margin-right: 75px;
+    padding-bottom: 10px;
+}
+
+#contacts >p {
+    color: #2b3399;
+    text-align: right;
+    margin-right: 75px;
+}
+
+footer {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+    margin: 50px auto;
+    max-width: 85%;
+    border-top: 1px solid rgba(28, 33, 164, .4);
+}
+
+footer >p {
+    color: rgba(28, 33, 164, 0.6);
+}
+
+.open-window {
+    position: relative;
+    top: 10px;
+    left: 86px;
+    height:40px;
+    width:120px;
+    border: 1px solid #2b3377;
+}
+
+.open-window >p {
+    color: #2b3377;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid #2b3377;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #2b3399;
+}
+
+.modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2b3377;
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 10px 15px;
+    color: #2b3399;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 0;
+    pointer-events: all;
+}
+
